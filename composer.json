@@ -1,0 +1,13 @@
+{
+  "name":"clog/clog",
+  "autoload":{
+    "psr-4": {"Clog\\": "src/"}
+  },
+  "config":{
+    "secure-http":false
+  },
+  "require": {
+    "monolog/monolog": "1.24.0",
+    "sentry/sentry": "1.10.0"
+  }
+}
