@@ -8,7 +8,8 @@ use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
 use Raven_Client;
 
-class Clog {
+class Clog
+{
     static public $ins;
 
     private $lev = array(
@@ -35,9 +36,9 @@ class Clog {
             throw new \Exception("caller and env must be set!");
         }
         self::load_request_id();
+        $log_path = getenv("log_path");
 
-
-        $logfile = !empty(getenv("logfile_format")) ? getenv("logfile_format") : $env . '-' . $caller . "-" . date("Y-m-d") . '.log';
+        $logfile = !empty(getenv("logfile_format")) ? getenv("logfile_format") : $log_path . $env . '-' . $caller . "-" . date("Y-m-d") . '.log';
         // 默认的日期格式是 "Y-m-d H:i:s"
         $dateFormat = "Y-m-d\TH:i:sP";
         // 默认的输出格式是 "[%datetime%] %channel%.%level_name%: %message% %context% %extra%\n"
@@ -85,7 +86,7 @@ class Clog {
         }
 
 
-        if ($this->lev[$level] >= 400) {
+        if ($this->lev[$level] >= 400 && getenv('SENTRY_DSN')) {
             self::LogSentry($msg);
         }
 
