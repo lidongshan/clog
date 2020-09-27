@@ -8,7 +8,7 @@ composer config repo.packagist composer http://composer.xxx.xxx
 ## 引入Clog composer包
 ### 方法1
 ```bash
-composer require antiy/clog
+composer require clog/clog
 ```
 ### 方法2
 ```json

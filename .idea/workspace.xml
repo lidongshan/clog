@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf0eb9a1-9883-461a-8810-e35a2d62cfa8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/clog/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clog/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clog/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clog/phpunit.phar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clog/src/Clog.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clog/test/ClogClientTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +31,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/clog" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="ClogClientTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="ClogClientTest" file="$PROJECT_DIR$/test/ClogClientTest.php" scope="Class" />
@@ -53,7 +56,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601190371282</updated>
-      <workItem from="1601190372320" duration="560000" />
+      <workItem from="1601190372320" duration="797000" />
     </task>
     <servers />
   </component>
